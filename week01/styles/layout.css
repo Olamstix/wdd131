@@ -16,28 +16,32 @@ header {
 }
 
 nav {
-    background-color: black;
     height: 80px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.modern a {
+    flex: 1 1 100%;
+}
+
+.navigation {
+    list-style: none;
     display: flex;
-    justify-content: space-around;
+    background-color: black;
+    align-items: center;
 }
 
-nav ul li {
-    margin: 0 15px;
+.navigation li {
+    flex: 1 1 auto;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
+.navigation a {
     display: block;
+    color: #eee;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
 }
+
 
 main {
     display: flex;
