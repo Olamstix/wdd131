@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        display: flex !important;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+        margin-left: 40px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+        height: 80px;
+    }
+
+}
