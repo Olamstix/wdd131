@@ -10,6 +10,10 @@
         margin-left: 40px;
     }
 
+    nav ul li a:hover {
+        color: #D1B073;
+    }
+
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
