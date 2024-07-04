@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Olamide Mobolaji. Temple Album.">
+        <meta name="author" content="Olamide Mobolaji">
+        <title>Place | Kenya</title>
+        <link rel="stylesheet" href="./styles/place.css">
+        <script src="./scripts/place.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Kenya</h1>
+        </header>
+        <main>
+            <section class="hero">
+                <img sizes="(max-width: 600px) 600px,
+                        (max-width: 900px) 900px,
+                        1200px" src="./images/kenya-faq-2.jpg" alt="Kenya Hero Image">
+                <div class="content">
+                    <div class="card">
+                        <h2>Data</h2>
+                        <ul>
+                            <li>Area: 580,367 sq km</li>
+                            <li>Population: 54,985,698</li>
+                            <li>Capital: Nairobi</li>
+                            <li>Languages: English, Swahili</li>
+                            <li>Currency: Kenyan Shilling</li>
+                            <li>Time Zone: UTC+3</li>
+                            <li>Calling Code: +254</li>
+                            <li>Internet TLD: .ke</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h2>Weather <span class="weather-icon">⛅</span></h2>
+                        <ul>
+                            <li>Temperature: <span id="temperature">24°C</span></li>
+                            <li>Conditions: Sunny</li>
+                            <li>Wind: <span id="wind">10 km/h</span></li>
+                            <li>Wind Chill: <span id="wind-chill">N/A</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="year"></span> Kenya | Last Modification: <span id="last-modified"></span></p>
+        </footer>
+    </body>
+
+</html>
