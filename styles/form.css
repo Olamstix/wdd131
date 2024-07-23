@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #6200ea;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select,
+input[type="date"],
+textarea,
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#rating {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+/* Style the labels to look like stars */
+#rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+/* Change star color on hover */
+#rating label:hover,
+#rating label:hover~label {
+    color: #ffca28;
+}
+
+/* Keep the selected stars filled */
+input[type="radio"]:checked~label {
+    color: #ffca28;
+}
+
+/* Keep the checked star and the previous ones filled */
+input[type="radio"]:checked+label,
+input[type="radio"]:checked+label~label {
+    color: #ffca28;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6200ea;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffca28;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #6200ea;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.review-footer {
+    margin-top: 22%;
+}
+
+.confirmation {
+    padding: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #rating {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #rating label {
+        font-size: 1.5rem;
+    }
+
+    select,
+    input[type="date"],
+    textarea,
+    input[type="text"],
+    input[type="submit"] {
+        font-size: 1rem;
+    }
+
+    textarea {
+        height: 70px;
+    }
+
+    .review-footer {
+        margin-top: 100%;
+    }
+}
+
+/* Additional Styles for Better UX */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6200ea;
+    box-shadow: 0 0 5px rgba(98, 0, 234, 0.5);
+}
